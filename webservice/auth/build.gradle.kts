@@ -9,3 +9,13 @@ tasks.register("name"){
         println("test in auth project")
     }
 }
+
+description= "auth description"
+version = 23
+println(name)
+println(version)
+println(group)
+println(description)
+println(buildDir)
+
+println(parent!!.extra["counter"])

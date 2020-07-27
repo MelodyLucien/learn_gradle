@@ -27,9 +27,10 @@ dependencies {
     // Use JUnit test framework
     testImplementation("junit:junit:4.13")
 }
+defaultTasks("name")
 
-tasks.register("name"){
-	doLast{
-		println("name test")
-	}
+tasks.register("name") {
+    doLast {
+        println("name project name--->"+project.name)
+    }
 }

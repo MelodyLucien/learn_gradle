@@ -13,3 +13,5 @@ include("cbaseres")
 include("webservice")
 include("webservice:auth")
 include("webservice:test")
+
+println("settings file is executed in initialization phase")

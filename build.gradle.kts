@@ -33,9 +33,108 @@ application {
     mainClassName = "com.lucien.client.App"
 }
 
+defaultTasks("run1","clean1")
 
-tasks.register("name"){
-	doLast{
-		println("name test")
-	}
+tasks.register("run1"){
+    doLast{
+        println("default run1 task")
+    }
 }
+
+tasks.register("clean1"){
+    doLast{
+        println("default clean1 task")
+    }
+}
+
+tasks.register("name") {
+    dependsOn("count")
+    doLast {
+        println("name test")
+    }
+}
+
+
+tasks.register("count") {
+    doLast {
+        repeat(4) {
+            println("$it")
+        }
+    }
+}
+
+repeat(4){ it->
+    tasks.register("task$it"){
+        doLast{
+            println("$it")
+        }
+    }
+}
+
+tasks.named("task0"){ dependsOn("task1","task2","task3") }
+
+val hello by tasks.registering{
+    doLast{
+        println("hello")
+    }
+}
+
+hello.configure {
+    doLast {
+        println("hello 1")
+    }
+}
+
+tasks.named("hello"){
+    dependsOn("task0")
+}
+
+tasks.register("myProperties"){
+    extra["name"]="zhouhao58"
+}
+
+tasks.register("printProps"){
+    doLast{
+        println(tasks["myProperties"].extra["name"])
+    }
+}
+
+tasks.register<Copy>("myCopy"){
+    from("src")
+    into("des")
+    include("**/*.java")
+}
+
+tasks.named("myCopy"){
+	description = "my copy task to copy files from src"
+    dependsOn("hello")
+    doFirst{
+        println("begin copy")
+    }
+    doLast{
+        println("end copy")
+    }
+}
+
+tasks.register("testPhase"){
+    println("this is executed in configuration phase!")
+    doFirst{
+        println("this is first executed action in testPhase testPhaseTask")
+    }
+
+    doLast{
+        println("this is last executed action in testPhase testPhaseTask")
+    }
+}
+
+tasks.register("test2"){
+    doLast{
+        println()
+    }
+}
+
+gradle.taskGraph.whenReady{
+    println("gradle ready")
+}
+
+println("root build.gradle file this is executed in configuration phase ")

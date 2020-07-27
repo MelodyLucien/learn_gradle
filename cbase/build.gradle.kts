@@ -29,8 +29,9 @@ dependencies {
 
     implementation(project(":cbaseres"))
 }
-tasks.register("name"){
-	doLast{
-		println("name test")
-	}
+
+tasks.register("name") {
+    doLast {
+        println("name test--root name---->" + project.rootDir.name)
+    }
 }
