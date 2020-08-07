@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2545ed60-a116-480f-96d2-a7c6262b61dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cbaseres/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/cbaseres/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/des/main/java/com/lucien/client/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/des/test/java/com/lucien/client/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,20 +37,27 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="gradleTest" type="f1a62948:ProjectNode" />
-                <item name="cbase" type="2d1252cf:ModuleNode" />
+                <item name="cbaseres" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="gradleTest" type="f1a62948:ProjectNode" />
-                <item name="cbase" type="2d1252cf:ModuleNode" />
+                <item name="cbaseres" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="gradleTest" type="f1a62948:ProjectNode" />
-                <item name="cbase" type="2d1252cf:ModuleNode" />
+                <item name="cbaseres" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gradleTest" type="f1a62948:ProjectNode" />
+                <item name="cbaseres" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -74,7 +85,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Gradle.gradleTest:cbaseres [build]">
+  <component name="RunManager" selected="Gradle.learn_gradle:cbaseres [buildAPKS]">
     <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lucien.cbaseres.Library" />
       <module name="gradleTest.cbaseres.main" />
@@ -107,8 +118,28 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="learn_gradle:cbaseres [buildAPKS]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cbaseres" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildAPKS" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.learn_gradle:cbaseres [buildAPKS]" />
         <item itemvalue="Gradle.gradleTest:cbaseres [build]" />
         <item itemvalue="Application.Library" />
       </list>
@@ -127,34 +158,59 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1483" height="188" key="GridCell.Tab.0.bottom" timestamp="1595517604592">
+    <state x="315" y="0" key="CommitChangelistDialog2" timestamp="1596800752146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="188" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595517604592" />
-    <state width="1483" height="188" key="GridCell.Tab.0.center" timestamp="1595517604592">
+    <state x="315" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1596800752146" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1595905097181">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="188" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595517604592" />
-    <state width="1483" height="188" key="GridCell.Tab.0.left" timestamp="1595517604592">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1595905097181" />
+    <state x="499" y="115" key="FileChooserDialogImpl" timestamp="1596800691391">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="188" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595517604592" />
-    <state width="1483" height="188" key="GridCell.Tab.0.right" timestamp="1595517604592">
+    <state x="499" y="115" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596800691391" />
+    <state width="1483" height="260" key="GridCell.Tab.0.bottom" timestamp="1596800664572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="188" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595517604592" />
-    <state x="261" y="85" key="Vcs.Push.Dialog.v2" timestamp="1595848216822">
+    <state width="1483" height="260" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596800664572" />
+    <state width="1483" height="260" key="GridCell.Tab.0.center" timestamp="1596800664572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="261" y="85" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595848216822" />
+    <state width="1483" height="260" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596800664572" />
+    <state width="1483" height="260" key="GridCell.Tab.0.left" timestamp="1596800664571">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="260" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596800664571" />
+    <state width="1483" height="260" key="GridCell.Tab.0.right" timestamp="1596800664572">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="260" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596800664572" />
+    <state x="261" y="85" key="Vcs.Push.Dialog.v2" timestamp="1595898319904">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="261" y="85" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595898319904" />
     <state x="592" y="308" key="com.intellij.ide.util.TipDialog" timestamp="1595834601874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="592" y="308" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1595834601874" />
-    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1595847671834">
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1596799933715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595847671834" />
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596799933715" />
   </component>
 </project>

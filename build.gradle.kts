@@ -100,9 +100,9 @@ tasks.register("printProps"){
 }
 
 tasks.register<Copy>("myCopy"){
-    from("src")
+    from(".")
+    include("src/**")
     into("des")
-    include("**/*.java")
 }
 
 tasks.named("myCopy"){
@@ -138,3 +138,4 @@ gradle.taskGraph.whenReady{
 }
 
 println("root build.gradle file this is executed in configuration phase ")
+println("${rootDir.path}")

@@ -32,5 +32,22 @@ defaultTasks("name")
 tasks.register("name") {
     doLast {
         println("name project name--->"+project.name)
+        //copy file to dir
     }
+}
+
+tasks.register("name2"){
+    doLast{
+        println("name2")
+    }
+}
+
+//使用fileTree的方式进行文件的copy操作
+var myFileTree = fileTree("build").files
+myFileTree.retainAll {it.name.endsWith(".jar") }
+
+tasks.register<Copy>("buildAPKS"){
+    dependsOn("name","name2")
+    from(myFileTree)
+    into(rootProject.rootDir.absolutePath+"/des")
 }
